@@ -1,0 +1,41 @@
+.table-container {
+  max-width: 100%; /* Postavite željenu maksimalnu visinu */
+  overflow-y: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 14px;
+  text-align: left;
+
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 10px 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.styled-table td {
+  color: black;
+  border: 1px solid #333;
+}
+
+.styled-table th {
+  background-color: #333;
+  color: white;
+  border: 1px solid white;
+}
+
+.black-header {
+  background-color: black;
+}
+
+/* Stilizacija prvog reda u tbody (opciono) */
+.styled-table tbody tr:first-child {
+  background-color: #f5f5f5;
+}

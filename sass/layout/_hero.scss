@@ -1,0 +1,216 @@
+.hero {
+  background-color: black;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  h2 {
+    font-size: calc(7.14286px + 2.23214vw + -19.23077px + 6.41026vh);
+    line-height: 1.22;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.content-page {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  .content-head {
+    gap: 50px;
+  }
+  .contact-page {
+    gap: 0px;
+  }
+}
+
+.img-home-page-box {
+  margin-top: 40px;
+
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.background-container-tab {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  .text-overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+    h2 {
+      text-transform: uppercase;
+      font-size: 32px;
+      color: black;
+    }
+    button {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+}
+
+.excellence-tab-content {
+  .image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Da se pokrije ceo div */
+    height: 100%; /* Da se pokrije ceo div */
+    background-image: url('./slideshow-1-floor.webp');
+    background-size: cover; /* Da se slika proporcionalno razvuče da pokrije ceo div */
+    background-position: center; /* Da se slika centrirano pozicionira unutar diva */
+    opacity: 0.7; /* Providnost slike */
+    z-index: -1; /* Postavljamo z-index na manji broj kako bi se slika pozicionirala iza teksta */
+  }
+  .text-overlay-2 {
+    position: relative;
+    padding: 30px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    h2 {
+      font-size: 22px;
+      color: black;
+      text-align: left;
+    }
+  }
+}
+
+.container-small-box {
+  width: 100%;
+  background-color: rgb(0, 121, 0);
+}
+
+.tab-switch-06 {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.our-service-page {
+  background-color: white;
+  h2 {
+    font-size: 50px;
+    font-weight: 400;
+  }
+
+  .container {
+    height: 100%;
+    .in-picture-box {
+      height: 100%;
+      padding: 30px;
+      a {
+        text-align: center;
+      }
+    }
+  }
+  .header {
+    position: relative;
+  }
+  .footer {
+    position: relative;
+  }
+}
+
+.img-box-services {
+  position: relative;
+
+  img {
+    position: absolute;
+    height: 100%;
+  }
+  .background-container-tab {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 405px;
+  }
+}
+
+.plywood-list {
+  img {
+    height: 200px;
+  }
+  p {
+    font-size: 10px;
+  }
+
+}
+
+.choose-plywood {
+  img {
+    width: 100px;
+    height: 100%;
+  }
+}
+
+.tip-img-box {
+  height: 300px;
+  img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.img-box-tips-illus {
+  display: flex;
+  position: relative;
+  height: 400px;
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+  }
+}
+
+
+.contact-final {
+  .background-container-tab {
+    justify-content: flex-end;
+    width: auto;
+    height: 600px;
+    .info {
+      padding: 20px 60px;
+      background-color: rgba(192, 192, 192, 0.827);
+      color: black;
+    }
+  }
+}
+
+.head-page {
+  &__content {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: black;
+  }
+}

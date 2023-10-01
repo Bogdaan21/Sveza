@@ -1,0 +1,83 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  height: 132px;
+  z-index: 2;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: black;
+    }
+    @include respond(large-phone) {
+      justify-content: center;
+    }
+    &__navbar {
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        position: relative;
+        color: black;
+        font-weight: 700;
+        padding-bottom: 10px;
+        font-size: 12px;
+        &::after {
+          bottom: -5px;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: black;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
+        &:hover::after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    text-align: center;
+    align-items: center;
+    margin-right: 50px;
+    @include respond(large-phone) {
+      padding-top: 2rem;
+    }
+    img {
+
+      width: 200px;
+      @include respond(large-phone) {
+        height: 10rem;
+      }
+    }
+    span {
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: $font-size-sm;
+      font-weight: 700;
+      line-height: $font-size-sm;
+    }
+  }
+  &__btn-wrap {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include respond(large-phone) {
+      display: none;
+    }
+  }
+}

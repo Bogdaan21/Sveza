@@ -1,0 +1,59 @@
+form {
+  position: relative;
+  width: 100%;
+
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password'],
+  input[type='number'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  // Styling for Select Boxes
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+
+  // Styling for Buttons
+  button,
+  input[type='submit'] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:red;
+    color: #fff;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; // Omogućava vertikalno proširivanje
+  }
+}

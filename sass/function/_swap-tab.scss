@@ -1,0 +1,715 @@
+.box {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.tab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+/* tab list 會動的底線 */
+.tab-list::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  background-color: #aaa;
+  transition: 0.3s;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.tab-toggle {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 20px;
+  .border-bottom-s {
+    padding-bottom: 20px;
+  }
+  img {
+    width: 100%;
+  }
+  .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+.tab-toggle:nth-child(1):checked ~ .tab-list .tab-item:nth-child(1),
+.tab-toggle:nth-child(2):checked ~ .tab-list .tab-item:nth-child(2),
+.tab-toggle:nth-child(3):checked ~ .tab-list .tab-item:nth-child(3),
+.tab-toggle:nth-child(4):checked ~ .tab-list .tab-item:nth-child(4),
+.tab-toggle:nth-child(5):checked ~ .tab-list .tab-item:nth-child(5) {
+  opacity: 1;
+}
+
+/* tab bar 底線位移控制 */
+.tab-toggle:nth-child(2):checked ~ .tab-list::before {
+  transform: translateX(100%);
+}
+
+.tab-toggle:nth-child(3):checked ~ .tab-list::before {
+  transform: translateX(200%);
+}
+
+.tab-toggle:nth-child(4):checked ~ .tab-list::before {
+  transform: translateX(300%);
+}
+
+.tab-toggle:nth-child(5):checked ~ .tab-list::before {
+  transform: translateX(400%);
+}
+
+/* 內容顯示控制 */
+.tab-toggle:nth-child(1):checked ~ .tab-container .tab-content:nth-child(1),
+.tab-toggle:nth-child(2):checked ~ .tab-container .tab-content:nth-child(2),
+.tab-toggle:nth-child(3):checked ~ .tab-container .tab-content:nth-child(3),
+.tab-toggle:nth-child(4):checked ~ .tab-container .tab-content:nth-child(4),
+.tab-toggle:nth-child(5):checked ~ .tab-container .tab-content:nth-child(5) {
+  display: block;
+}
+
+.tab-trigger {
+  display: block;
+  padding: 10px 0;
+}
+
+.tab-container {
+  padding: 15px 30px;
+  height: 100%;
+}
+
+.advantages {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+//------------ Ounner navigation
+.ounner-box {
+  background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.ounner-tab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 40px;
+  height: 200px;
+}
+
+/* tab list 會動的底線 */
+// .ounner-tab-list::before {
+//   content: '';
+//   display: block;
+//   height: 2px;
+//   width: 50%;
+//   position: absolute;
+//   bottom: 0;
+//   background-color: #aaa;
+//   transition: 0.3s;
+// }
+
+.ounner-tab-item {
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.ounner-tab-toggle {
+  display: none;
+}
+
+.ounner-tab-content {
+  display: none;
+
+  .border-bottom-s {
+    padding-bottom: 20px;
+  }
+}
+
+.ounner-tab-toggle:nth-child(1):checked ~ .ounner-tab-list .ounner-tab-item:nth-child(1),
+.ounner-tab-toggle:nth-child(2):checked ~ .ounner-tab-list .ounner-tab-item:nth-child(2),
+.ounner-tab-toggle:nth-child(3):checked ~ .ounner-tab-list .ounner-tab-item:nth-child(3),
+.ounner-tab-toggle:nth-child(4):checked ~ .ounner-tab-list .ounner-tab-item:nth-child(4),
+.ounner-tab-toggle:nth-child(5):checked ~ .ounner-tab-list .ounner-tab-item:nth-child(5) {
+  opacity: 1;
+}
+
+/* tab bar 底線位移控制 */
+.ounner-tab-toggle:nth-child(2):checked ~ .ounner-tab-list::before {
+  transform: translateX(100%);
+}
+
+.ounner-tab-toggle:nth-child(3):checked ~ .ounner-tab-list::before {
+  transform: translateX(200%);
+}
+
+.ounner-tab-toggle:nth-child(4):checked ~ .ounner-tab-list::before {
+  transform: translateX(300%);
+}
+
+.ounner-tab-toggle:nth-child(5):checked ~ .ounner-tab-list::before {
+  transform: translateX(400%);
+}
+
+/* 內容顯示控制 */
+.ounner-tab-toggle:nth-child(1):checked ~ .ounner-tab-container .ounner-tab-content:nth-child(1),
+.ounner-tab-toggle:nth-child(2):checked ~ .ounner-tab-container .ounner-tab-content:nth-child(2),
+.ounner-tab-toggle:nth-child(3):checked ~ .ounner-tab-container .ounner-tab-content:nth-child(3),
+.ounner-tab-toggle:nth-child(4):checked ~ .ounner-tab-container .ounner-tab-content:nth-child(4),
+.ounner-tab-toggle:nth-child(5):checked ~ .ounner-tab-container .ounner-tab-content:nth-child(5) {
+  display: block;
+}
+
+.ounner-tab-trigger {
+  display: block;
+  padding: 10px 0;
+  text-align: left;
+  color: black;
+}
+
+.ounner-tab-container {
+  width: 100%;
+  height: 100%;
+}
+
+//------------ Inner navigation
+
+.inner-tab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+  gap: 10;
+}
+
+/* tab list 會動的底線 */
+.inner-tab-list::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 16.66%;
+  position: absolute;
+  bottom: 0;
+  background-color: #aaa;
+  transition: 0.3s;
+}
+
+.inner-tab-item {
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.inner-tab-toggle {
+  display: none;
+}
+
+.inner-tab-content {
+  display: none;
+  margin-top: 20px;
+  .border-bottom-s {
+    padding-bottom: 20px;
+  }
+}
+
+.inner-tab-toggle:nth-child(1):checked ~ .inner-tab-list .inner-tab-item:nth-child(1),
+.inner-tab-toggle:nth-child(2):checked ~ .inner-tab-list .inner-tab-item:nth-child(2),
+.inner-tab-toggle:nth-child(3):checked ~ .inner-tab-list .inner-tab-item:nth-child(3),
+.inner-tab-toggle:nth-child(4):checked ~ .inner-tab-list .inner-tab-item:nth-child(4),
+.inner-tab-toggle:nth-child(5):checked ~ .inner-tab-list .inner-tab-item:nth-child(5),
+.inner-tab-toggle:nth-child(6):checked ~ .inner-tab-list .inner-tab-item:nth-child(6) {
+  opacity: 1;
+}
+
+.inner-tab-toggle:nth-child(2):checked ~ .inner-tab-list::before {
+  transform: translateX(100%);
+}
+
+.inner-tab-toggle:nth-child(3):checked ~ .inner-tab-list::before {
+  transform: translateX(200%);
+}
+
+.inner-tab-toggle:nth-child(4):checked ~ .inner-tab-list::before {
+  transform: translateX(300%);
+}
+
+.inner-tab-toggle:nth-child(5):checked ~ .inner-tab-list::before {
+  transform: translateX(400%);
+}
+
+.inner-tab-toggle:nth-child(6):checked ~ .inner-tab-list::before {
+  transform: translateX(500%);
+}
+
+.inner-tab-toggle:nth-child(1):checked ~ .inner-tab-container .inner-tab-content:nth-child(1),
+.inner-tab-toggle:nth-child(2):checked ~ .inner-tab-container .inner-tab-content:nth-child(2),
+.inner-tab-toggle:nth-child(3):checked ~ .inner-tab-container .inner-tab-content:nth-child(3),
+.inner-tab-toggle:nth-child(4):checked ~ .inner-tab-container .inner-tab-content:nth-child(4),
+.inner-tab-toggle:nth-child(5):checked ~ .inner-tab-container .inner-tab-content:nth-child(5),
+.inner-tab-toggle:nth-child(6):checked ~ .inner-tab-container .inner-tab-content:nth-child(6) {
+  display: block;
+}
+
+.inner-tab-trigger {
+  display: block;
+  padding: 10px 0;
+}
+
+.inner-tab-container {
+  padding: 15px 30px;
+  height: 100%;
+}
+
+//------------ Tip tab
+
+.tip-box {
+  display: flex;
+  .vertical-line {
+    height: auto;
+    border: 1px solid black;
+    height: 826px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+
+.tip-tab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  width: 180px;
+}
+
+/* Stilizacija za svaki <li> element */
+.tip-tab-item {
+  opacity: 0.5;
+  padding: 30px 10px;
+
+  transition: 0.4s;
+}
+
+/* Povećavanje opacity-a i pomeranje svakog <li> elementa ulevo kada je hover */
+.tip-tab-item:hover {
+  opacity: 1;
+  // margin-left: 0;
+}
+
+.tip-tab-toggle {
+  display: none;
+}
+
+.tip-tab-content {
+  display: none;
+  margin-top: 20px;
+  .border-bottom-s {
+    padding-bottom: 20px;
+    color: black;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .img-box {
+    height: 300px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.tip-tab-toggle:nth-child(1):checked ~ .tip-tab-list .tip-tab-item:nth-child(1),
+.tip-tab-toggle:nth-child(2):checked ~ .tip-tab-list .tip-tab-item:nth-child(2),
+.tip-tab-toggle:nth-child(3):checked ~ .tip-tab-list .tip-tab-item:nth-child(3),
+.tip-tab-toggle:nth-child(4):checked ~ .tip-tab-list .tip-tab-item:nth-child(4),
+.tip-tab-toggle:nth-child(5):checked ~ .tip-tab-list .tip-tab-item:nth-child(5),
+.tip-tab-toggle:nth-child(6):checked ~ .tip-tab-list .tip-tab-item:nth-child(6) {
+  opacity: 1;
+  border-left: 2px solid black;
+}
+
+.tip-tab-toggle:nth-child(2):checked ~ .tip-tab-list::before {
+  transform: translateX(100%);
+}
+
+.tip-tab-toggle:nth-child(3):checked ~ .tip-tab-list::before {
+  transform: translateX(200%);
+}
+
+.tip-tab-toggle:nth-child(4):checked ~ .tip-tab-list::before {
+  transform: translateX(300%);
+}
+
+.tip-tab-toggle:nth-child(5):checked ~ .tip-tab-list::before {
+  transform: translateX(400%);
+}
+
+.tip-tab-toggle:nth-child(6):checked ~ .tip-tab-list::before {
+  transform: translateX(500%);
+}
+
+.tip-tab-toggle:nth-child(1):checked ~ .tip-tab-container .tip-tab-content:nth-child(1),
+.tip-tab-toggle:nth-child(2):checked ~ .tip-tab-container .tip-tab-content:nth-child(2),
+.tip-tab-toggle:nth-child(3):checked ~ .tip-tab-container .tip-tab-content:nth-child(3),
+.tip-tab-toggle:nth-child(4):checked ~ .tip-tab-container .tip-tab-content:nth-child(4),
+.tip-tab-toggle:nth-child(5):checked ~ .tip-tab-container .tip-tab-content:nth-child(5),
+.tip-tab-toggle:nth-child(6):checked ~ .tip-tab-container .tip-tab-content:nth-child(6) {
+  display: block;
+}
+
+.tip-tab-trigger {
+  display: block;
+  padding: 10px 0;
+}
+
+.tip-tab-container {
+  padding: 15px 30px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+//--------------------------------------------- exellence tab
+
+.excellence-tab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+  gap: 10;
+}
+
+/* tab list 會動的底線 */
+.excellence-tab-list::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.excellence-tab-item {
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.excellence-tab-toggle {
+  display: none;
+}
+
+.excellence-tab-content {
+  display: none;
+  margin-top: 20px;
+  height: 100%;
+  .border-bottom-s {
+    padding-bottom: 20px;
+  }
+  img {
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+  }
+  .text-overlay-2 {
+    height: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.excellence-tab-toggle:nth-child(1):checked ~ .excellence-tab-list .excellence-tab-item:nth-child(1),
+.excellence-tab-toggle:nth-child(2):checked ~ .excellence-tab-list .excellence-tab-item:nth-child(2) {
+  opacity: 1;
+}
+
+.excellence-tab-toggle:nth-child(2):checked ~ .excellence-tab-list::before {
+  transform: translateX(100%);
+}
+
+.excellence-tab-toggle:nth-child(1):checked ~ .excellence-tab-container .excellence-tab-content:nth-child(1),
+.excellence-tab-toggle:nth-child(2):checked ~ .excellence-tab-container .excellence-tab-content:nth-child(2) {
+  display: block;
+}
+
+.excellence-tab-trigger {
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.excellence-tab-container {
+  padding: 15px 30px;
+  height: 400px;
+}
+
+//--------------------------------------------- BALTIC tab
+
+.baltic-box {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  // overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  img {
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.baltic-tab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100px;
+}
+
+.baltic-tab-item {
+  flex: 1;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.baltic-tab-item:hover {
+  cursor: pointer;
+}
+
+.baltic-tab-toggle {
+  display: none;
+}
+
+.baltic-tab-content {
+  display: none;
+  height: 100%;
+  position: relative;
+
+  .border-bottom-s {
+    padding-bottom: 20px;
+  }
+  .content {
+    width: 100%;
+  }
+  .text-overlay {
+    width: 100%;
+  }
+  .background-container-tab {
+    padding: 40px;
+    .text-overlay {
+      h2 {
+        color: white;
+      }
+    }
+  }
+}
+
+.baltic-tab-toggle:nth-child(1):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(1),
+.baltic-tab-toggle:nth-child(2):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(2),
+.baltic-tab-toggle:nth-child(3):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(3),
+.baltic-tab-toggle:nth-child(4):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(4),
+.baltic-tab-toggle:nth-child(5):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(5) {
+  opacity: 1;
+  background-color: white;
+}
+
+/* tab bar 底線位移控制 */
+.baltic-tab-toggle:nth-child(2):checked ~ .baltic-tab-list::before {
+  transform: translateX(100%);
+}
+
+.baltic-tab-toggle:nth-child(3):checked ~ .baltic-tab-list::before {
+  transform: translateX(200%);
+}
+
+.baltic-tab-toggle:nth-child(4):checked ~ .baltic-tab-list::before {
+  transform: translateX(300%);
+}
+
+.baltic-tab-toggle:nth-child(5):checked ~ .baltic-tab-list::before {
+  transform: translateX(400%);
+}
+
+/* 內容顯示控制 */
+.baltic-tab-toggle:nth-child(1):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(1),
+.baltic-tab-toggle:nth-child(2):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(2),
+.baltic-tab-toggle:nth-child(3):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(3),
+.baltic-tab-toggle:nth-child(4):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(4),
+.baltic-tab-toggle:nth-child(5):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(5) {
+  display: flex;
+}
+
+.baltic-tab-trigger {
+  display: block;
+  padding: 10px 0;
+  text-align: left;
+  color: black;
+  cursor: pointer;
+}
+
+.baltic-tab-container {
+  width: 100%;
+  height: 100%;
+}
+
+//----------------------------------------OUR SERVICE TAB
+
+.ourservice-box {
+  display: flex;
+  .vertical-line {
+    border: 2px solid silver;
+    margin-left: -3px;
+  }
+  h2 {
+    font-size: 22px;
+    color: black;
+    text-align: left;
+  }
+}
+
+.ourservice-tab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  min-width: 180px;
+}
+
+/* Stilizacija za svaki <li> element */
+.ourservice-tab-item {
+  padding: 10px 10px;
+  transition: 0.4s;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Povećavanje opacity-a i pomeranje svakog <li> elementa ulevo kada je hover */
+.ourservice-tab-item:hover {
+  cursor: pointer;
+  // margin-left: 0;
+}
+
+.ourservice-tab-toggle {
+  display: none;
+}
+
+.ourservice-tab-content {
+  display: none;
+  height: 100%;
+  position: relative;
+  .border-bottom-s {
+    padding-bottom: 20px;
+  }
+  img {
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+  }
+  .background-container-tab {
+    padding: 40px;
+    .text-overlay-2 {
+      h2 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+      .header__content__navbar {
+        a {
+          color: white;
+        }
+        a::after {
+          background: white;
+        }
+      }
+    }
+  }
+}
+
+.ourservice-tab-toggle:nth-child(1):checked ~ .ourservice-tab-list .ourservice-tab-item:nth-child(1),
+.ourservice-tab-toggle:nth-child(2):checked ~ .ourservice-tab-list .ourservice-tab-item:nth-child(2),
+.ourservice-tab-toggle:nth-child(3):checked ~ .ourservice-tab-list .ourservice-tab-item:nth-child(3),
+.ourservice-tab-toggle:nth-child(4):checked ~ .ourservice-tab-list .ourservice-tab-item:nth-child(4) {
+  opacity: 1;
+  border-right: 2px solid black;
+  transition: 0.3s;
+}
+
+.ourservice-tab-toggle:nth-child(2):checked ~ .ourservice-tab-list::before {
+  transform: translateX(100%);
+}
+
+.ourservice-tab-toggle:nth-child(3):checked ~ .ourservice-tab-list::before {
+  transform: translateX(200%);
+}
+
+.ourservice-tab-toggle:nth-child(4):checked ~ .ourservice-tab-list::before {
+  transform: translateX(300%);
+}
+
+.ourservice-tab-toggle:nth-child(1):checked ~ .ourservice-tab-container .ourservice-tab-content:nth-child(1),
+.ourservice-tab-toggle:nth-child(2):checked ~ .ourservice-tab-container .ourservice-tab-content:nth-child(2),
+.ourservice-tab-toggle:nth-child(3):checked ~ .ourservice-tab-container .ourservice-tab-content:nth-child(3),
+.ourservice-tab-toggle:nth-child(4):checked ~ .ourservice-tab-container .ourservice-tab-content:nth-child(4) {
+  display: block;
+}
+
+.ourservice-tab-trigger {
+  display: block;
+  padding: 10px 0;
+}
+
+.ourservice-tab-container {
+  padding: 15px 30px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,37 @@
+// Fonts
+// -----------------------------------------
+
+@font-face {
+  font-family: 'Stapel'; /* Naziv font-familije koji ćete koristiti */
+  src: url('../fonts/stapel/Stapel_Narrow-Bold.ttf') format('woff2'), 
+       url('../fonts/stapel/Stapel_Narrow-Bold.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-primary: "Stapel", sans-serif !default;
+
+// Colors
+// -----------------------------------------
+
+$color-primary: black !default;
+$color-primary-2: black !default;
+$color-secondary: black;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// Font - sizes
+
+$font-size-default: 16px;
+$font-size-default-xl: 18px;
+$font-size-primary: 64px;
+$font-size-primary-phone: 34px;
+$font-size-secondary: 26px;
+$font-size-tertiary: 20px;
+$font-size-quaternary-xl: 18px;
+$font-size-quaternary: 16px;
+$font-size-nav: 16px;
+$font-size-sm: 14px;
+

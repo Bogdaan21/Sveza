@@ -1,0 +1,50 @@
+.btn {
+  text-decoration: none;
+  color: #fff !important;
+  display: inline-block;
+  padding: 9px 20px 8px;
+  border-radius: 25px;
+  background: #000000;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  span {
+    font-size: $font-size-sm;
+  }
+  &__primary {
+    width: 90%;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-primary-2;
+    }
+  }
+  &__hero {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform: translate(0, -6rem);
+    transition: transform 0.3s linear;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url("../assets/icon/kv.svg");
+      bottom: 0;
+      left: -19px;
+    }
+    &:hover {
+      transform: translate(0, 0);
+    }
+  }
+}

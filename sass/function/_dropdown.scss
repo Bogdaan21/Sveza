@@ -1,0 +1,50 @@
+.sidenav {
+  .plus-button {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .sidenav a,
+  .dropdown-btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .sidenav a:hover,
+  .dropdown-btn:hover {
+    color: #818181;
+  }
+
+  .main {
+    margin-left: 200px; 
+    font-size: 20px; 
+
+  }
+
+  .dropdown-container {
+    display: none;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+}

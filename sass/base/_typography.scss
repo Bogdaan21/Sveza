@@ -1,0 +1,57 @@
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: $font-size-default;
+  line-height: 1.8;
+  color: $color-secondary;
+}
+p {
+  font-size: $font-size-default;
+}
+a {
+  text-decoration: none;
+  cursor: pointer !important;
+}
+.heading-primary {
+  position: relative;
+  font-size: $font-size-primary;
+  line-height: $font-size-primary;
+  font-weight: 700;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  transform: rotate(-18deg);
+
+  @include respond(large-phone) {
+    font-size: $font-size-primary-phone;
+    line-height: $font-size-primary-phone;
+  }
+  span {
+    display: block;
+    text-transform: uppercase;
+    font-size: $font-size-secondary;
+    line-height: $font-size-secondary;
+    font-weight: 700;
+
+    @include respond(large-phone) {
+      font-size: $font-size-quaternary;
+      line-height: $font-size-quaternary;
+    }
+  }
+}
+.heading-secondary {
+  font-family: $font-primary;
+  font-size: $font-size-secondary;
+  font-weight: 700;
+  backface-visibility: hidden;
+}
+.heading-tertiary {
+  font-weight: 600;
+  font-size: $font-size-tertiary;
+  line-height: 25px;
+  backface-visibility: hidden;
+}
+.heading-quaternary {
+  font-weight: 600;
+  font-size: $font-size-quaternary;
+  line-height: 25px;
+}
