@@ -4928,7 +4928,7 @@ a.text-dark:focus {
   display: flex; }
   .tip-box .vertical-line {
     height: auto;
-    border: 1px solid black;
+    border: 2px solid silver;
     height: 826px; }
   .tip-box h2 {
     font-size: 32px; }
@@ -4938,13 +4938,13 @@ a.text-dark:focus {
   padding: 0;
   list-style: none;
   position: relative;
-  width: 180px; }
+  width: 180px;
+  margin-left: -3px; }
 
 /* Stilizacija za svaki <li> element */
 .tip-tab-item {
   opacity: 0.5;
-  padding: 30px 10px;
-  transition: 0.4s; }
+  padding: 30px 10px; }
 
 /* Povećavanje opacity-a i pomeranje svakog <li> elementa ulevo kada je hover */
 .tip-tab-item:hover {
@@ -4978,19 +4978,19 @@ a.text-dark:focus {
   border-left: 2px solid black; }
 
 .tip-tab-toggle:nth-child(2):checked ~ .tip-tab-list::before {
-  transform: translateX(100%); }
+  transform: translateY(100%); }
 
 .tip-tab-toggle:nth-child(3):checked ~ .tip-tab-list::before {
-  transform: translateX(200%); }
+  transform: translateY(200%); }
 
 .tip-tab-toggle:nth-child(4):checked ~ .tip-tab-list::before {
-  transform: translateX(300%); }
+  transform: translateY(300%); }
 
 .tip-tab-toggle:nth-child(5):checked ~ .tip-tab-list::before {
-  transform: translateX(400%); }
+  transform: translateY(400%); }
 
 .tip-tab-toggle:nth-child(6):checked ~ .tip-tab-list::before {
-  transform: translateX(500%); }
+  transform: translateY(500%); }
 
 .tip-tab-toggle:nth-child(1):checked ~ .tip-tab-container .tip-tab-content:nth-child(1),
 .tip-tab-toggle:nth-child(2):checked ~ .tip-tab-container .tip-tab-content:nth-child(2),
@@ -5017,17 +5017,8 @@ a.text-dark:focus {
   display: flex;
   position: relative;
   gap: 10; }
-
-/* tab list 會動的底線 */
-.excellence-tab-list::before {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 50%;
-  position: absolute;
-  bottom: 0;
-  background-color: black;
-  transition: 0.3s; }
+  .excellence-tab-list .active {
+    color: black; }
 
 .excellence-tab-item {
   flex: 1;
@@ -5053,27 +5044,19 @@ a.text-dark:focus {
     height: 100%;
     justify-content: flex-end; }
 
-.excellence-tab-toggle:nth-child(1):checked ~ .excellence-tab-list .excellence-tab-item:nth-child(1),
-.excellence-tab-toggle:nth-child(2):checked ~ .excellence-tab-list .excellence-tab-item:nth-child(2) {
-  opacity: 1; }
-
-.excellence-tab-toggle:nth-child(2):checked ~ .excellence-tab-list::before {
-  transform: translateX(100%); }
-
-.excellence-tab-toggle:nth-child(1):checked ~ .excellence-tab-container .excellence-tab-content:nth-child(1),
-.excellence-tab-toggle:nth-child(2):checked ~ .excellence-tab-container .excellence-tab-content:nth-child(2) {
-  display: block; }
-
 .excellence-tab-trigger {
   display: block;
   padding: 10px 0;
   width: 100%;
   height: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #6e6e6e; }
 
 .excellence-tab-container {
   padding: 15px 30px;
   height: 400px; }
+  .excellence-tab-container .active {
+    display: flex; }
 
 .baltic-box {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
@@ -5098,20 +5081,16 @@ a.text-dark:focus {
   position: relative;
   height: 100%;
   width: 100px; }
+  .baltic-tab-list .active {
+    background-color: white; }
 
 .baltic-tab-item {
   flex: 1;
   transition: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: black; }
 
 .baltic-tab-item:hover {
   cursor: pointer; }
-
-.baltic-tab-toggle {
-  display: none; }
 
 .baltic-tab-content {
   display: none;
@@ -5128,45 +5107,21 @@ a.text-dark:focus {
     .baltic-tab-content .background-container-tab .text-overlay h2 {
       color: white; }
 
-.baltic-tab-toggle:nth-child(1):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(1),
-.baltic-tab-toggle:nth-child(2):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(2),
-.baltic-tab-toggle:nth-child(3):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(3),
-.baltic-tab-toggle:nth-child(4):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(4),
-.baltic-tab-toggle:nth-child(5):checked ~ .baltic-tab-list .baltic-tab-item:nth-child(5) {
-  opacity: 1;
-  background-color: white; }
-
-/* tab bar 底線位移控制 */
-.baltic-tab-toggle:nth-child(2):checked ~ .baltic-tab-list::before {
-  transform: translateX(100%); }
-
-.baltic-tab-toggle:nth-child(3):checked ~ .baltic-tab-list::before {
-  transform: translateX(200%); }
-
-.baltic-tab-toggle:nth-child(4):checked ~ .baltic-tab-list::before {
-  transform: translateX(300%); }
-
-.baltic-tab-toggle:nth-child(5):checked ~ .baltic-tab-list::before {
-  transform: translateX(400%); }
-
-/* 內容顯示控制 */
-.baltic-tab-toggle:nth-child(1):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(1),
-.baltic-tab-toggle:nth-child(2):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(2),
-.baltic-tab-toggle:nth-child(3):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(3),
-.baltic-tab-toggle:nth-child(4):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(4),
-.baltic-tab-toggle:nth-child(5):checked ~ .baltic-tab-container .baltic-tab-content:nth-child(5) {
-  display: flex; }
-
 .baltic-tab-trigger {
-  display: block;
-  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: left;
   color: black;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 100%;
+  height: 100%; }
 
 .baltic-tab-container {
   width: 100%;
   height: 100%; }
+  .baltic-tab-container .active {
+    display: flex; }
 
 .ourservice-box {
   display: flex; }
@@ -5183,21 +5138,27 @@ a.text-dark:focus {
   padding: 0;
   list-style: none;
   position: relative;
-  min-width: 180px; }
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .ourservice-tab-list .active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    border-right: 2px solid black;
+    transition: 0.3s; }
 
-/* Stilizacija za svaki <li> element */
 .ourservice-tab-item {
-  padding: 10px 10px;
   transition: 0.4s;
   cursor: pointer;
   text-align: left; }
 
-/* Povećavanje opacity-a i pomeranje svakog <li> elementa ulevo kada je hover */
 .ourservice-tab-item:hover {
   cursor: pointer; }
-
-.ourservice-tab-toggle {
-  display: none; }
 
 .ourservice-tab-content {
   display: none;
@@ -5222,38 +5183,19 @@ a.text-dark:focus {
     .ourservice-tab-content .background-container-tab .text-overlay-2 .header__content__navbar a::after {
       background: white; }
 
-.ourservice-tab-toggle:nth-child(1):checked ~ .ourservice-tab-list .ourservice-tab-item:nth-child(1),
-.ourservice-tab-toggle:nth-child(2):checked ~ .ourservice-tab-list .ourservice-tab-item:nth-child(2),
-.ourservice-tab-toggle:nth-child(3):checked ~ .ourservice-tab-list .ourservice-tab-item:nth-child(3),
-.ourservice-tab-toggle:nth-child(4):checked ~ .ourservice-tab-list .ourservice-tab-item:nth-child(4) {
-  opacity: 1;
-  border-right: 2px solid black;
-  transition: 0.3s; }
-
-.ourservice-tab-toggle:nth-child(2):checked ~ .ourservice-tab-list::before {
-  transform: translateX(100%); }
-
-.ourservice-tab-toggle:nth-child(3):checked ~ .ourservice-tab-list::before {
-  transform: translateX(200%); }
-
-.ourservice-tab-toggle:nth-child(4):checked ~ .ourservice-tab-list::before {
-  transform: translateX(300%); }
-
-.ourservice-tab-toggle:nth-child(1):checked ~ .ourservice-tab-container .ourservice-tab-content:nth-child(1),
-.ourservice-tab-toggle:nth-child(2):checked ~ .ourservice-tab-container .ourservice-tab-content:nth-child(2),
-.ourservice-tab-toggle:nth-child(3):checked ~ .ourservice-tab-container .ourservice-tab-content:nth-child(3),
-.ourservice-tab-toggle:nth-child(4):checked ~ .ourservice-tab-container .ourservice-tab-content:nth-child(4) {
-  display: block; }
-
 .ourservice-tab-trigger {
   display: block;
-  padding: 10px 0; }
+  padding: 10px 10px;
+  cursor: pointer;
+  position: relative; }
 
 .ourservice-tab-container {
   padding: 15px 30px;
   height: 100%;
   width: 100%;
   overflow: hidden; }
+  .ourservice-tab-container .active {
+    display: flex; }
 
 .sidenav .plus-button {
   width: 30px;

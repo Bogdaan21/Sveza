@@ -21,28 +21,78 @@ if (items) {
   });
 }
 
+//---------------- 06/07 tab excellence
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const tabTriggers = document.querySelectorAll('.excellence-tab-trigger');
+  const tabContents = document.querySelectorAll('.excellence-tab-content');
+
+  tabTriggers.forEach((trigger, index) => {
+    trigger.addEventListener('click', function() {
+      // Skloni 'active' klasu sa svih tabova i dodaj je samo kliknutom tabu
+      tabTriggers.forEach(tabTrigger => {
+        tabTrigger.classList.remove('active');
+      });
+      trigger.classList.add('active');
+
+      // Skloni 'flex' klasu sa svih tabova i dodaj je samo odgovarajućem tabu
+      tabContents.forEach(content => {
+        content.style.display = 'none';
+      });
+      tabContents[index].style.display = 'flex';
+    });
+  });
+});
 
 
-//-------------------Inner Grade Classification
+//---------------- 04/07 tab ourservice
 
-// function openCity(evt, cityName) {
-//   var i, tabcontent, tablinks;
+document.addEventListener('DOMContentLoaded', function() {
+  const tabTriggers = document.querySelectorAll('.ourservice-tab-trigger');
+  const tabContents = document.querySelectorAll('.ourservice-tab-content');
 
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
+  tabTriggers.forEach((trigger, index) => {
+    trigger.addEventListener('click', function() {
+      // Skloni 'active' klasu sa svih tabova i dodaj je samo kliknutom tabu
+      tabTriggers.forEach(tabTrigger => {
+        tabTrigger.classList.remove('active');
+      });
+      trigger.classList.add('active');
 
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
+      // Skloni 'active' klasu sa svih tabova i podesi ih na 'display: none;'
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+      });
 
-//   document.getElementById(cityName).style.display = "block";
-//   evt.currentTarget.className += " active";
-// } 
+      // Prikaži odgovarajući tab
+      tabContents[index].classList.add('active');
+    });
+  });
+});
 
-//--------------------------------------- DROPDOWNQUESTION
 
+//---------------- 03/07 tab baltic
+
+document.addEventListener('DOMContentLoaded', function() {
+  const tabTriggers = document.querySelectorAll('.baltic-tab-item');
+  const tabContents = document.querySelectorAll('.baltic-tab-content');
+
+  tabTriggers.forEach((trigger, index) => {
+    trigger.addEventListener('click', function() {
+      // Skloni 'active' klasu sa svih tabova i dodaj je samo kliknutom tabu
+      tabTriggers.forEach(tabTrigger => {
+        tabTrigger.classList.remove('active');
+      });
+      trigger.classList.add('active');
+
+      // Skloni 'active' klasu sa svih tabova i podesi ih na 'display: none;'
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+      });
+
+      // Prikaži odgovarajući tab
+      tabContents[index].classList.add('active');
+    });
+  });
+});
