@@ -19,7 +19,13 @@ ORDER: Base + Typography > general layout + grid > page layout > components
 @font-face {
   font-family: 'Stapel';
   /* Naziv font-familije koji ćete koristiti */
-  src: url("../fonts/stapel/Stapel_Narrow-Bold.ttf") format("woff2"), url("../fonts/stapel/Stapel_Narrow-Bold.ttf") format("woff");
+  src: url("../assets/fonts/stapel/Stapel_Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Stapel-regular';
+  /* Naziv font-familije koji ćete koristiti */
+  src: url("../assets/fonts/stapel/Stapel_Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 *,
@@ -51,7 +57,7 @@ body {
       padding: 0; } }
 
 body {
-  font-family: "Stapel", sans-serif;
+  font-family: "Stapel";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -88,7 +94,7 @@ a {
         line-height: 16px; } }
 
 .heading-secondary {
-  font-family: "Stapel", sans-serif;
+  font-family: "Stapel";
   font-size: 26px;
   font-weight: 700;
   backface-visibility: hidden; }
@@ -4058,7 +4064,7 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important; }
+  font-family: "Stapel" !important; }
 
 .text-justify {
   text-align: justify !important; }
@@ -4355,7 +4361,10 @@ a.text-dark:focus {
     justify-content: space-between;
     align-items: center; }
     .header__content a {
-      color: black; }
+      color: black;
+      text-transform: uppercase; }
+    .header__content .dropdown {
+      text-transform: uppercase; }
     @media (max-width: 47.9375em) {
       .header__content {
         justify-content: center; } }
@@ -4513,7 +4522,8 @@ a.text-dark:focus {
   background-color: white; }
   .our-service-page h2 {
     font-size: 50px;
-    font-weight: 400; }
+    font-weight: 400;
+    text-transform: uppercase; }
   .our-service-page .container {
     height: 100%; }
     .our-service-page .container .in-picture-box {
@@ -4617,87 +4627,6 @@ a.text-dark:focus {
 .styled-table tbody tr:first-child {
   background-color: #f5f5f5; }
 
-.age-gate {
-  position: relative;
-  background-image: url(../assets/img/ageGatebg.webp);
-  height: 100vh;
-  background-position: center;
-  background-size: contain;
-  z-index: 0; }
-  .age-gate::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0004376751) 0%, black 100%);
-    height: 100%;
-    z-index: -1; }
-  .age-gate__header-logo, .age-gate__footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .age-gate__header-logo {
-    padding-top: 4rem; }
-    .age-gate__header-logo img {
-      width: 10.7rem;
-      height: 9.2rem; }
-  .age-gate__body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: calc(100vh - 20.2rem); }
-    .age-gate__body h1 {
-      font-size: 64px;
-      line-height: 64px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: black;
-      padding-bottom: 9rem; }
-      @media (max-width: 47.9375em) {
-        .age-gate__body h1 {
-          font-size: 40px;
-          line-height: 50px; } }
-    .age-gate__body p {
-      font-size: 18px;
-      line-height: 18px;
-      color: black;
-      padding-bottom: 4rem; }
-    .age-gate__body .items {
-      list-style: none;
-      display: flex; }
-    .age-gate__body .item {
-      position: relative;
-      text-transform: uppercase;
-      font-size: 36px;
-      font-weight: 700; }
-      .age-gate__body .item:first-child {
-        margin-right: 5.5rem; }
-      .age-gate__body .item::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        background-color: black;
-        bottom: 0rem;
-        left: 0;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.2s ease; }
-      .age-gate__body .item.active::before {
-        visibility: visible;
-        opacity: 1; }
-    .age-gate__body .link {
-      color: black; }
-  .age-gate__footer-logo img {
-    width: 15.4rem;
-    height: 3.1rem; }
-
-.border-bottom-s {
-  border-bottom: 1px solid silver; }
-
 .box {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   background-color: white;
@@ -4735,7 +4664,8 @@ a.text-dark:focus {
   display: none;
   margin-top: 20px; }
   .tab-content .border-bottom-s {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver; }
   .tab-content img {
     width: 100%; }
   .tab-content .col-md-4 {
@@ -4958,6 +4888,7 @@ a.text-dark:focus {
   margin-top: 20px; }
   .tip-tab-content .border-bottom-s {
     padding-bottom: 20px;
+    border-bottom: 1px solid silver;
     color: black; }
   .tip-tab-content img {
     height: 100%;
@@ -5124,7 +5055,8 @@ a.text-dark:focus {
     display: flex; }
 
 .ourservice-box {
-  display: flex; }
+  display: flex;
+  height: 350px !important; }
   .ourservice-box .vertical-line {
     border: 2px solid silver;
     margin-left: -3px; }

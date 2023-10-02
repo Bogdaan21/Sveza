@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'Stapel'; /* Naziv font-familije koji ćete koristiti */
+  src: url('../assets/fonts/stapel/Stapel_Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stapel-regular'; /* Naziv font-familije koji ćete koristiti */
+  src: url('../assets/fonts/stapel/Stapel_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Stapel';
 }
 
 .navbar {
@@ -26,6 +41,7 @@ body {
   color: black;
   background-color: inherit;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .dropdown-content {
@@ -36,7 +52,7 @@ body {
   padding-top: 20px;
   z-index: 1;
   padding: 10px;
-  border-radius: 10px;
+
 }
 
 .dropdown-content a {
@@ -46,7 +62,8 @@ body {
   line-height: 1;
   display: block;
   text-align: left;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .dropdown-content a:hover {

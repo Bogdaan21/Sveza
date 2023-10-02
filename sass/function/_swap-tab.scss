@@ -41,6 +41,7 @@
   margin-top: 20px;
   .border-bottom-s {
     padding-bottom: 20px;
+    border-bottom: 1px solid silver;
   }
   img {
     width: 100%;
@@ -334,6 +335,7 @@
   margin-top: 20px;
   .border-bottom-s {
     padding-bottom: 20px;
+    border-bottom: 1px solid silver;
     color: black;
   }
   img {
@@ -555,6 +557,7 @@
 
 .ourservice-box {
   display: flex;
+  height: 350px !important;
   .vertical-line {
     border: 2px solid silver;
     margin-left: -3px;

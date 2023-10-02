@@ -4737,7 +4737,7 @@ html {
   }
 }
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important;
+  font-family: $font-primary !important;
 }
 
 .text-justify {

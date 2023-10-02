@@ -1,9 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap');
+@font-face {
+  font-family: 'Stapel'; /* Naziv font-familije koji ćete koristiti */
+  src: url('../assets/fonts/stapel/Stapel_Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stapel-regular'; /* Naziv font-familije koji ćete koristiti */
+  src: url('../assets/fonts/stapel/Stapel_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Stapel';
   box-sizing: border-box;
 }
 
@@ -16,6 +28,9 @@ body a {
   color: white;
 }
 
+p {
+  font-family: 'Stapel-regular';
+}
 
 .projectSlider {
   width: 100vw;

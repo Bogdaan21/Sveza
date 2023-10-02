@@ -12,6 +12,10 @@
     align-items: center;
     a {
       color: black;
+      text-transform: uppercase;
+    }
+    .dropdown {
+      text-transform: uppercase;
     }
     @include respond(large-phone) {
       justify-content: center;

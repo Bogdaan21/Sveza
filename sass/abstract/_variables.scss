@@ -3,13 +3,20 @@
 
 @font-face {
   font-family: 'Stapel'; /* Naziv font-familije koji ćete koristiti */
-  src: url('../fonts/stapel/Stapel_Narrow-Bold.ttf') format('woff2'), 
-       url('../fonts/stapel/Stapel_Narrow-Bold.ttf') format('woff');
+  src: url('../assets/fonts/stapel/Stapel_Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-$font-primary: "Stapel", sans-serif !default;
+@font-face {
+  font-family: 'Stapel-regular'; /* Naziv font-familije koji ćete koristiti */
+  src: url('../assets/fonts/stapel/Stapel_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-primary: 'Stapel' !default;
+$font-primary2: 'Stapel-regular' !default;
 
 // Colors
 // -----------------------------------------
