@@ -1,0 +1,96 @@
+.boxes {
+  display: flex;
+}
+
+.img-home-page-box {
+  margin-top: 40px;
+
+  h2 {
+    color: white;
+  }
+
+  .box1,
+  .box2 {
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    transition: width 2s linear;
+  }
+
+  .box1:hover,
+  .box2:hover {
+    width: 500%;
+  }
+
+  //------------------
+
+  .box {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    transition: width 0.7s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    h3 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+    .header__content__navbar {
+      a {
+        color: white;
+      }
+      ::after {
+        background-color: white;
+      }
+    }
+  }
+
+  .box3 {
+    width: 90%;
+    &:hover {
+      width: 100%;
+      + .box4 {
+        width: 0;
+      }
+    }
+  }
+
+  .box4 {
+    width: 10%;
+    &:hover {
+      width: 100%;
+      + .box3 {
+        width: 0;
+      }
+    }
+  }
+
+//--------------------------------------
+
+.box5,
+.box6 {
+  width: 50%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  transition: width 2s linear;
+}
+
+.box5:hover,
+.box6:hover {
+  width: 500%;
+}
+
+
+  // .box1 {
+  //   background-image: url('./assets/img/room-5.jpg');
+  // }
+
+  // .box2 {
+  //   background-image: url('./assets/img/room-6.jpg');
+  // }
+}
