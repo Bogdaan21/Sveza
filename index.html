@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/dropdown-nav.css" />
     <title>Jagermeister</title>
+    <style>
+      .box1 {
+        background-image: url('./assets/img/room-5.jpg');
+      }
+
+      .box2 {
+        background-image: url('./assets/img/room-6.jpg');
+      }
+
+      .box3 {
+        background-image: url('./assets/img/room-5.jpg');
+      }
+
+      .box4 {
+        background-image: url('./assets/img/room-6.jpg');
+      }
+    </style>
   </head>
   <body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css" />
@@ -64,6 +81,15 @@
                   <a href="#" class="dropbtn"> Contact </a>
                   <div class="dropdown-content">
                     <a href="#">Sales map</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <a href="#" class="dropbtn">EN</a>
+                  <div class="dropdown-content">
+                    <a href="#">RU</a>
+                    <a href="#">ES</a>
+                    <a href="#">DE</a>
+                    <a href="#">CN</a>
                   </div>
                 </div>
               </div>
@@ -134,11 +160,20 @@
                         <div>02/07</div>
                         <div class="d-flex flex-column align-items-start">
                           <h2>Baltic birch select</h2>
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="header__content__navbar"><a>Learn more</a></div>
                       </div>
+
                       <div class="col-md-12 img-home-page-box">
-                        <img src="./assets/img/slideshow-1-floor.webp" />
+                        <div class="boxes">
+                          <div class="box1">
+                            <div class=""><h2>Exterior</h2></div>
+                          </div>
+                          <div class="box2">
+                            <div class=""><h2>Interior</h2></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -159,7 +194,6 @@
                       </div>
                     </div>
                     <div class="baltic-box mt-5">
-                      <img src="./assets/img/slideshow-1-floor.webp" />
                       <ul class="baltic-tab-list">
                         <li class="baltic-tab-item active">
                           <label class="baltic-tab-trigger" for="baltic-tab1 active">Jedan</label>
@@ -179,16 +213,27 @@
                       </ul>
                       <div class="baltic-tab-container">
                         <div class="baltic-tab-content active">
+                          <img src="./assets/img/slideshow-1-floor.webp" />
                           <div class="content active-content">
                             <div class="background-container-tab">
                               <div class="text-overlay">
                                 <h2 class="mb-5">Construction</h2>
-                                <button class="btn">more</button>
+                                <div class="header__content__navbar"><a>See products</a></div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="baltic-tab-content">2</div>
+                        <div class="baltic-tab-content">
+                          <img src="./assets/img/room-6.jpg" />
+                          <div class="content active-content">
+                            <div class="background-container-tab">
+                              <div class="text-overlay">
+                                <h2 class="mb-5">Construction</h2>
+                                <div class="header__content__navbar"><a>See products</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <div class="baltic-tab-content">3</div>
                         <div class="baltic-tab-content">4</div>
                         <div class="baltic-tab-content">5</div>
@@ -215,92 +260,80 @@
                         </div>
                       </div>
                       <div class="d-flex mt-5">
-                        <!-- <div class="container-small-box col-md-3">
-                          <div class="col">
+                        <div class="container-small-box col-md-3">
+                          <div class="col mt-5">
                             <div class="row">
-                              <div class="col-6">
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <div>7</div>
-                                  <div>
+                              <div class="col-6 mb-5">
+                                <div class="d-flex justify-content-between align-items-around number-mills">
+                                  <div class="n-mills">7</div>
+                                  <div class="txt-mills">
                                     manufacturers <br />
                                     products
                                   </div>
                                 </div>
-                                <div>
-                                  <div>mills</div>
-                                </div>
+                                <p class="end-mills-txt">mills</p>
                               </div>
-                              <div class="col-6">
-                                <div class="d-flex justify-content-between">
-                                  <div>7</div>
-                                  <div>
+                              <div class="col-6 mb-5">
+                                <div class="d-flex justify-content-between align-items-around number-mills">
+                                  <div class="n-mills">7</div>
+                                  <div class="txt-mills">
                                     manufacturers <br />
                                     products
                                   </div>
                                 </div>
-                                <div>
-                                  <div>mills</div>
-                                </div>
+                                <p class="end-mills-txt">mills</p>
                               </div>
                             </div>
                           </div>
                           <div class="col">
                             <div class="row">
-                              <div class="col-6">
-                                <div class="d-flex justify-content-between">
-                                  <div>7</div>
-                                  <div>
+                              <div class="col-6 mb-5">
+                                <div class="d-flex justify-content-between align-items-around number-mills">
+                                  <div class="n-mills">7</div>
+                                  <div class="txt-mills">
                                     manufacturers <br />
                                     products
                                   </div>
                                 </div>
-                                <div>
-                                  <div>mills</div>
-                                </div>
+                                <p class="end-mills-txt">mills</p>
                               </div>
-                              <div class="col-6">
-                                <div class="d-flex justify-content-between">
-                                  <div>7</div>
-                                  <div>
+                              <div class="col-6 mb-5">
+                                <div class="d-flex justify-content-between align-items-around number-mills">
+                                  <div class="n-mills">7</div>
+                                  <div class="txt-mills">
                                     manufacturers <br />
                                     products
                                   </div>
                                 </div>
-                                <div>
-                                  <div>mills</div>
-                                </div>
+                                <p class="end-mills-txt">mills</p>
                               </div>
                             </div>
                           </div>
                           <div class="col">
                             <div class="row">
-                              <div class="col-6">
-                                <div class="d-flex justify-content-between">
-                                  <div>7</div>
-                                  <div>
+                              <div class="col-6 mb-5">
+                                <div class="d-flex justify-content-between align-items-around number-mills">
+                                  <div class="n-mills">7</div>
+                                  <div class="txt-mills">
                                     manufacturers <br />
                                     products
                                   </div>
                                 </div>
-                                <div>
-                                  <div>mills</div>
-                                </div>
+                                <p class="end-mills-txt">mills</p>
                               </div>
-                              <div class="col-6">
-                                <div class="d-flex justify-content-between">
-                                  <div>7</div>
-                                  <div>
+                              <div class="col-6 mb-5">
+                                <div class="d-flex justify-content-between align-items-around number-mills">
+                                  <div class="n-mills">7</div>
+                                  <div class="txt-mills">
                                     manufacturers <br />
                                     products
                                   </div>
                                 </div>
-                                <div>
-                                  <div>mills</div>
-                                </div>
+                                <p class="end-mills-txt">mills</p>
                               </div>
                             </div>
                           </div>
-                        </div> -->
+                        </div>
                         <div class="ourservice-box">
                           <ul class="ourservice-tab-list">
                             <li class="ourservice-tab-item">
@@ -322,7 +355,7 @@
                               <div class="d-flex h-100">
                                 <img src="./assets/img/slideshow-1-floor.webp" />
                                 <div class="background-container-tab">
-                                  <div class="text-overlay-2">
+                                  <div class="text-overlay-2 w-50">
                                     <h2>Tailored Busness Solutions</h2>
                                     <p class="text-left">
                                       We are open to cooperation with the media in all regions of the country and will be happy to give your comments on your
@@ -348,25 +381,40 @@
               <div class="swiper-slide-container">
                 <main class="content-page">
                   <div class="container-home">
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column about">
                       <div class="content-head col-md-12 d-flex flex-column justify-content-center align-items-start">
                         <div>05/07</div>
                         <h2 class="mb-5 text-left">About</h2>
                       </div>
+
                       <div class="row">
                         <div class="d-flex col-md-6 flex-column">
-                          <div class="text-center">
-                            <h2>Who</h2>
-                            <h2>What</h2>
-                            <h2>Why</h2>
+                          <div class="text-center about-header-s">
+                            <h2 onmouseover="showParagraph(0)">Who</h2>
+                            <h2 onmouseover="showParagraph(1)">What</h2>
+                            <h2 onmouseover="showParagraph(2)">Why</h2>
                           </div>
                         </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-end align-items-end">
-                          <p class="text-left mb-5">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                          </p>
+                        <div class="col-md-6 d-flex flex-column justify-content-end align-items-end about-content-txt">
+                          <div class="change-text w-100 show-paragraph">
+                            <p class="text-left mb-5">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                              ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                              not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            </p>
+                          </div>
+                          <div class="change-text w-100">
+                            <p class="text-left mb-5">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and
+                              typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                          </div>
+                          <div class="change-text w-100">
+                            <p class="text-left mb-5">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                              ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                          </div>
                           <h2 class="w-100 text-left">100%</h2>
                           <div class="header__content__navbar w-100 text-left"><a>Learn more</a></div>
                         </div>
@@ -393,25 +441,13 @@
                           <h3>Our promise is not just a primise</h3>
                           <h3>It's a official policy!</h3>
                         </div>
-                        <div class="col-md-7">
-                          <div class="excellence-box">
-                            <input type="radio" class="excellence-tab-toggle" name="excellence-tab-toggle" id="excellence-tab1" checked />
-                            <input type="radio" class="excellence-tab-toggle" name="excellence-tab-toggle" id="excellence-tab2" />
-                            <ul class="excellence-tab-list">
-                              <li class="excellence-tab-item">
-                                <label class="excellence-tab-trigger active" for="excellence-tab1">Tab 1</label>
-                              </li>
-                              <li class="excellence-tab-item">
-                                <label class="excellence-tab-trigger" for="excellence-tab2">Tab 2</label>
-                              </li>
-                            </ul>
-                            <div class="excellence-tab-container">
-                              <div class="excellence-tab-content active" >
-                                <div class="background-container-tab align-items-start">
-                                  <img src="./assets/img/slideshow-1-floor.webp" />
-                                  <div class="image-background"></div>
-                                  <div class="text-overlay-2">
-                                    <h2>Tailored Business Solutions</h2>
+                        <div class="col-md-6">
+                          <div class="img-home-page-box">
+                            <div class="boxes boxes-excellence">
+                              <div class="box box3">
+                                <div class="p-5">
+                                  <div class="text-left">
+                                    <h3>Tailored Business Solutions</h3>
                                     <p class="text-left">
                                       We are open to cooperation with the media in all regions of the country and will be happy to give your comments on your
                                       request.
@@ -420,7 +456,18 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="excellence-tab-content">2</div>
+                              <div class="box box4">
+                                <div class="p-5">
+                                  <div class="text-left">
+                                    <h3>Tailored Business Solutions</h3>
+                                    <p class="text-left">
+                                      We are open to cooperation with the media in all regions of the country and will be happy to give your comments on your
+                                      request.
+                                    </p>
+                                    <div class="header__content__navbar"><a>Learn more</a></div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -475,16 +522,15 @@
       <footer class="footer">
         <div class="container-header">
           <div class="col-md-12 d-flex justify-content-between">
-            <div class="w-50 d-flex justify-content-between">
-              <span>Design by Restart IT</span>
-              <span>© 2023 PLYHOLZ </span>
+            <div class="d-flex justify-content-center w-100 gap-100">
+              <div>© 2023 PLYHOLZ</div>
               <div class="header__content__navbar"><a class="m-0">Privacy policy</a></div>
             </div>
-            <div class="header__content__navbar"><a class="m-0">ENG</a></div>
           </div>
         </div>
       </footer>
     </section>
+    <script src="script/change-text-index-page.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="script/script.js"></script>

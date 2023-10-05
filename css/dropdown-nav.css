@@ -44,10 +44,15 @@ body {
   text-transform: uppercase;
 }
 
+.dropbtn {
+  display: flex;
+  align-items: center;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(192, 192, 192, 0.604);
+  background-color: rgba(192, 192, 192);
   width: auto;
   padding-top: 20px;
   z-index: 1;
@@ -76,4 +81,16 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.grade-dropdown .dropdown-content {
+  width: 80px;
+  margin-left: 60px;
+  background: none;
+}
+
+.application-dropdown .dropdown-content {
+  background: none;
+  padding: 0px;
+  padding-top: 25px;
 }

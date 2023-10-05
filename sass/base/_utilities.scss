@@ -5,11 +5,30 @@
   color: $color-secondary;
 }
 .orange {
-  color: $color-primary;
+  color: $color-orange;
+}
+.silver {
+  color: $color-silver;
+}
+.bck-silver {
+  background-color: $bck-silver;
+}
+.bck-green {
+  background-color: $bck-green;
 }
 .txt-up {
   text-transform: uppercase;
 }
 .txt-right {
   text-align: right;
+}
+
+.icon {
+  height: 10px !important;
+  width: 10px !important;
+  margin-left: 10px;
+}
+
+textarea {
+  height: 150px;
 }

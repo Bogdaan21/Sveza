@@ -1,5 +1,5 @@
 .box {
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  // box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   background-color: white;
   border-radius: 3px;
   overflow: hidden;
@@ -316,8 +316,6 @@
 .tip-tab-item {
   opacity: 0.5;
   padding: 30px 10px;
-
-
 }
 
 /* Povećavanje opacity-a i pomeranje svakog <li> elementa ulevo kada je hover */
@@ -402,76 +400,48 @@
   overflow: hidden;
 }
 
-//--------------------------------------------- exellence tab
+//---------------------------------------------- ABOUT tab
 
-.excellence-tab-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  position: relative;
-  gap: 10;
-  .active {
-    color: black;
+.about-header-s {
+  h2 {
+    cursor: pointer;
+    &:hover,
+    &:active {
+      background-image: url('https://s3.amazonaws.com/usefulangle/news/95-5f6cc1ad5575e.jpg');
+      background-clip: text;
+      color: transparent; /* Tekst postaje transparentan zbog background-clip: text; */
+      -webkit-background-clip: text; /* Dodatna podrška za starije verzije pregledača */
+    }
   }
 }
 
-.excellence-tab-item {
-  flex: 1;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.excellence-tab-toggle {
+.change-text {
   display: none;
 }
 
-.excellence-tab-content {
-  display: none;
-  margin-top: 20px;
-  height: 100%;
-
-  .border-bottom-s {
-    padding-bottom: 20px;
-  }
-  img {
-    position: absolute;
-    object-fit: cover;
-    object-position: top;
-    width: 100%;
-    height: 100%;
-  }
-  .text-overlay-2 {
-    height: 100%;
-    justify-content: flex-end;
-  }
-}
-
-.excellence-tab-trigger {
+.show-paragraph {
   display: block;
-  padding: 10px 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  color: rgb(110, 110, 110);
+  animation: fadeIn 1s;
 }
 
-.excellence-tab-container {
-  padding: 15px 30px;
-  height: 400px;
-  .active {
-    display: flex;
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
   }
 }
 
 //--------------------------------------------- BALTIC tab
 
 .baltic-box {
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  // box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
   display: flex;
   width: 100%;
-  height: 400px;
+  height: 600px;
   position: relative;
   img {
     position: absolute;
@@ -479,6 +449,24 @@
     object-position: top;
     width: 100%;
     height: 100%;
+  }
+}
+
+.baltic-tab-container {
+  width: 100%;
+  height: 100%;
+  margin-left: -100px;
+  // z-index: -1;
+  .header__content__navbar {
+    a {
+      color: white;
+    }
+    ::after {
+      background: white;
+    }
+  }
+  .active {
+    display: flex;
   }
 }
 
@@ -491,9 +479,12 @@
   position: relative;
   height: 100%;
   width: 100px;
+  z-index: 1;
   .active {
     background-color: white;
-    
+    .baltic-tab-trigger {
+      color: black;
+    }
   }
 }
 
@@ -507,8 +498,6 @@
   cursor: pointer;
 }
 
-
-
 .baltic-tab-content {
   display: none;
   height: 100%;
@@ -519,6 +508,7 @@
   }
   .content {
     width: 100%;
+    padding-left: 100px;
   }
   .text-overlay {
     width: 100%;
@@ -538,26 +528,17 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  color: black;
+  color: white;
   cursor: pointer;
   width: 100%;
   height: 100%;
 }
 
-.baltic-tab-container {
-  width: 100%;
-  height: 100%;
-  .active {
-    display: flex;
-  }
-}
-
-
 //----------------------------------------OUR SERVICE TAB
 
 .ourservice-box {
   display: flex;
-  height: 350px !important;
+  height: 400px !important;
   .vertical-line {
     border: 2px solid silver;
     margin-left: -3px;
@@ -597,18 +578,15 @@
   }
 }
 
-
 .ourservice-tab-item {
   transition: 0.4s;
   cursor: pointer;
   text-align: left;
 }
 
-
 .ourservice-tab-item:hover {
   cursor: pointer;
 }
-
 
 .ourservice-tab-content {
   display: none;
@@ -629,6 +607,7 @@
     .text-overlay-2 {
       h2 {
         color: white;
+        font-size: 32px;
       }
       p {
         color: white;
@@ -645,13 +624,12 @@
   }
 }
 
-
-
 .ourservice-tab-trigger {
   display: block;
   padding: 10px 10px;
   cursor: pointer;
   position: relative;
+  font-size: 22px;
 }
 
 .ourservice-tab-container {
