@@ -52,7 +52,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(192, 192, 192);
+  background-color: rgb(224, 224, 224);
   width: auto;
   padding-top: 20px;
   z-index: 1;
@@ -67,7 +67,6 @@ body {
   line-height: 1;
   display: block;
   text-align: left;
-  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
@@ -80,7 +79,9 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .grade-dropdown .dropdown-content {

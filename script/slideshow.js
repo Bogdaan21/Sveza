@@ -43,3 +43,14 @@ var swiper = new Swiper(".swiper-container-home", {
   },
 });
 
+
+// Dodajemo event listener za tastaturu
+document.addEventListener("keydown", function (event) {
+  if (event.keyCode === 37) {
+    // leva strelica
+    swiper.slidePrev();
+  } else if (event.keyCode === 39) {
+    // desna strelica
+    swiper.slideNext();
+  }
+});

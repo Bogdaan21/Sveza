@@ -311,7 +311,7 @@ html {
   .container {
     min-width: 1000px; } }
 .container-home {
-  width: 1450px;
+  width: 1750px;
   margin: auto; }
 
 @media (min-width: 1200px) {
@@ -4632,6 +4632,11 @@ a.text-dark:focus {
   object-fit: cover;
   background-color: black; }
 
+.vertical-text {
+  writing-mode: vertical-lr;
+  font-size: 39px;
+  color: silver; }
+
 .table-container {
   max-width: 100%;
   /* Postavite željenu maksimalnu visinu */
@@ -4897,8 +4902,7 @@ a.text-dark:focus {
   display: flex; }
   .tip-box .vertical-line {
     height: auto;
-    border: 2px solid silver;
-    height: 826px; }
+    border: 2px solid silver; }
   .tip-box h2 {
     font-size: 32px; }
 
@@ -4983,7 +4987,7 @@ a.text-dark:focus {
 .about-header-s h2 {
   cursor: pointer; }
   .about-header-s h2:hover, .about-header-s h2:active {
-    background-image: url("https://s3.amazonaws.com/usefulangle/news/95-5f6cc1ad5575e.jpg");
+    background-image: url("https://www.weiss-dbs.com/wp-content/uploads/2019/08/weiss-doppelbodensysteme-belag-parkett.jpg");
     background-clip: text;
     color: transparent;
     /* Tekst postaje transparentan zbog background-clip: text; */
