@@ -32,3 +32,55 @@
 textarea {
   height: 150px;
 }
+
+.icon-pin-knot {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.text-icon-pin {
+  display: none;
+  height: 30px;
+  width: 290px;
+  margin-left: 10px;
+}
+
+
+.subtxt {
+  display: none;
+  padding-left: 10px;
+  position: absolute;
+  top:30px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.sublink:hover+.subtxt {
+  display: block !important;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff; /* Boja pozadine loading screen-a */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 9999;
+  transition: opacity 1s ease; /* Tranzicija za postepeno nestajanje loading screen-a */
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  pointer-events: none; /* Onemogućite interakciju sa loading screen-om nakon što nestane */
+}

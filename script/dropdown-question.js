@@ -5,21 +5,14 @@ dropdownButtons.forEach(function(button) {
     var dropdownContainer = this.nextElementSibling;
     var isExpanded = this.getAttribute('aria-expanded') === 'true';
 
-    // Zatvori sve druge dropdown menije
-    dropdownButtons.forEach(function(dropdown) {
-      if (dropdown !== button) {
-        dropdown.setAttribute('aria-expanded', 'false');
-        dropdown.nextElementSibling.style.display = 'none';
-      }
-    });
-
-    // Otvori ili zatvori kliknuti dropdown meni
     if (isExpanded) {
       this.setAttribute('aria-expanded', 'false');
-      dropdownContainer.style.display = 'none';
+      dropdownContainer.classList.add('hidden-class');
+      dropdownContainer.classList.remove('visible-class');
     } else {
       this.setAttribute('aria-expanded', 'true');
-      dropdownContainer.style.display = 'block';
+      dropdownContainer.classList.add('visible-class');
+      dropdownContainer.classList.remove('hidden-class');
     }
   });
 });
