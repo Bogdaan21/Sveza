@@ -56,6 +56,17 @@ body {
     body {
       padding: 0; } }
 
+.world-map-container .world-map {
+  width: 100%;
+  height: auto; }
+.world-map-container .tag {
+  position: absolute;
+  font-size: 14px;
+  background-color: #ffffff;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px; }
+
 body {
   font-family: "Stapel";
   font-weight: 400;
