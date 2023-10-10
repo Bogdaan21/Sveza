@@ -39,7 +39,7 @@ body {
 .world-map-container {
   .world-map {
     width: 100%;
-    height: auto;
+
   }
   .tag {
     position: absolute;
@@ -49,9 +49,10 @@ body {
     border: 1px solid #000000;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 1;
   }
   .active-tag {
-    background-color: $color-orange;
+    background-color: $bck-green;
     color: black;
   }
 }

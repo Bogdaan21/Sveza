@@ -57,8 +57,7 @@ body {
       padding: 0; } }
 
 .world-map-container .world-map {
-  width: 100%;
-  height: auto; }
+  width: 100%; }
 .world-map-container .tag {
   position: absolute;
   font-size: 14px;
@@ -66,9 +65,10 @@ body {
   padding: 5px;
   border: 1px solid #000000;
   border-radius: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1; }
 .world-map-container .active-tag {
-  background-color: orange;
+  background-color: #96d700;
   color: black; }
 
 body {
@@ -141,7 +141,7 @@ a {
   background-color: silver; }
 
 .bck-green {
-  background-color: rgba(151, 215, 0, 0.9); }
+  background-color: #96d700; }
 
 .txt-up {
   text-transform: uppercase; }
@@ -4644,10 +4644,13 @@ a.text-dark:focus {
     flex-direction: column;
     justify-content: space-between; }
 
-.plywood-list img {
-  height: 150px; }
-.plywood-list p {
-  font-size: 10px; }
+.plywood-list {
+  margin-left: 0px;
+  margin-right: 0px; }
+  .plywood-list img {
+    height: 150px; }
+  .plywood-list p {
+    font-size: 10px; }
 
 .choose-plywood img {
   width: 100px;
@@ -4698,7 +4701,8 @@ a.text-dark:focus {
 .vertical-text {
   writing-mode: vertical-lr;
   font-size: 39px;
-  color: silver; }
+  color: silver;
+  font-family: 'Stapel-regular'; }
 
 .table-container {
   max-width: 100%;
